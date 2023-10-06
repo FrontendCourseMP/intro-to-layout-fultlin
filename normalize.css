@@ -1,0 +1,152 @@
+@font-face {
+    font-family: "SpaceGroteks-Semibold";
+    src: url("fonts\space_Groteks\static\SpaceGrotesk-SemiBold.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "SpaceGroteks-Regular";
+    src: url("fonts\space_Groteks\static\SpaceGrotesk-Regular.ttf");
+}
+
+@font-face {
+    font-family: "SpaceGroteks-Medium";
+    src: url("fonts\space_Groteks\static\SpaceGrotesk-Medium.ttf");
+}
+
+:root {
+    --darkblue-color: #1A1E42;
+    --darkblue-for-text: rgba(26, 30, 66, 0.80);
+    --orange-color: orange;
+    --p-color: #667085;
+    --gray-400: #98A2B3;
+    font-size: 62.5%;
+    font-style: normal;
+}
+
+.wrapper {
+    display: flex;
+    padding: 1.8em 1.6em;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+   display: inline;
+   text-decoration: none; 
+}
+
+.menubtn {
+    background-color: white;
+    border: none;
+    padding-right: 1.6em;
+}
+
+.navigation-blog {
+    display: none;
+}
+
+.description {
+    display: flex;
+    padding: 2.5rem 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    gap: 3rem;
+}
+
+.regain {
+    margin: 0%;
+    color: var(--darkblue-color);
+    font-size: 4.8rem;
+    line-height: 124.444%;
+    font-family: "SpaceGroteks-Semibold", sans-serif;
+}
+
+.description p {
+    font-family: "SpaceGroteks-Regular", sans-serif;
+    color: var(--darkblue-for-text);
+    font-size: 1.8em;
+    line-height: 144.444%;
+    
+}
+
+.colortext {
+    color: var(--orange-color);
+}
+
+.unlock button{
+    background-color: var(--orange-color);
+    padding: 1em 2.4em;
+    border-radius: 0.4em;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25.375em;
+}
+
+.unlock a {
+    text-decoration: none;
+    font-family: "SpaceGroteks-Regular", sans-serif;
+    color: white;
+    display: flex;
+    align-self: stretch;
+    justify-content: center;
+}
+
+.recoveredwallets p {
+    font-family:"SpaceGroteks-Regular", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    color: var(--gray-400);
+}
+
+.recoveredwallets element{
+    border-left: none;
+    text-decoration: none;
+}
+
+.list {
+    column-count: 2;
+    gap: 6rem;
+    padding-left: 0;
+}
+
+.element {
+    display: flex;
+    width: 10.625rem;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.list2 {
+    column-count: 2;
+    display: flex;
+    width: 24.375rem;
+    padding: 2.5rem 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+}
+
+.element2 {
+    display: flex;
+    width: 10.625rem;
+    align-items: center;
+    gap: 1rem;
+}
+
+.wallet {
+    width: 24.375rem;
+height: 24.375rem;
+flex-shrink: 0;
+}
+
+.hr {
+    width: 3rem;
+    height: 0.125rem;
+    background-color: var(--orange-color);
+}
