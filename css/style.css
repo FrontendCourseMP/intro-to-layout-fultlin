@@ -141,7 +141,6 @@
 }
 
 .dark {
-    background-size: 200%;
     background-color: var(--darkblue-color);
 }
 
@@ -183,4 +182,10 @@
 .getintouch a {
     text-decoration: none;
     color: var(--dark-white);
+}
+
+.bgbl {
+    background-size: 100% 100%;
+    background-color: var(--darkblue-color);
+    padding: 0rem   
 }
