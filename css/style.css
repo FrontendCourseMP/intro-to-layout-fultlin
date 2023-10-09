@@ -32,28 +32,50 @@
     margin-left: 0;
 }
 
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
 .wrapper {
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
-    gap: 22rem;
+    padding-left: 1.6rem;
+    padding-top: 1.6rem;
 }
 
-.logo {
-
+.wrapper a {
     text-decoration: none;
-    padding-left: 0.5rem;
+    font-family: Space-Semi, sans-serif;
+    color: var(--darkblue-color);
+    font-size: 3rem;
+
 }
 
-.menubtn {
+.burger {
     background-color: white;
     border: none;
-    padding-right: 1.6em;
-    text-align: right;
+    position: absolute;
+    right: 0;
 }
 
 .navigation-blog {
     display: none;
+}
+
+.bigwallet {
+    margin-left: 4rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .descript {
@@ -108,10 +130,6 @@
 
 }
 
-.walletsplace {
-    margin-left: -4rem;
-}
-
 .under-p-white {
     font-family: Space-Medium, sans-serif;
     color: var(--dark-white);
@@ -121,15 +139,16 @@
 
 }
 
-.bigwallet {
-    margin-left: 7rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+.anotherbigwallet {
+    margin-top: 3rem;
+    margin-bottom: 6rem;
+    margin-left: 5rem;
 }
+
 
 .list {
     column-count: 2;
-    column-gap: 2.5rem;
+    column-gap: 10rem;
     display: inline-block;
     align-items: start;
 }
@@ -137,6 +156,15 @@
 .element {
     list-style: none;
 }
+
+.wall {
+    width: 10rem;
+}
+
+.wall2 {
+    width: 15rem;
+}
+
 
 .list2 {
     column-count: 2;
@@ -169,25 +197,18 @@
 
 .dark {
     background-color: var(--darkblue-color);
-    margin-left: -0.8rem;
-    margin-right: -0.8rem;
-
-
 }
 
-.why {
-    padding-top: 6rem;
-    padding-left: 1.6rem;
-    padding-right: 1.6rem;
-    padding-bottom: 3.75rem;
+
+.backgrs {
+    background-color: var(--background-section);
+    border-radius: 0.5rem;
+    padding: 3.2rem;
+    margin-bottom: 2.4rem;
 }
 
-.aboutwallet {
-    padding-top: 6rem;
-    padding-left: 1.6rem;
-    padding-right: 1.6rem;
-    padding-bottom: 3.75rem;
-}
+
+
 
 .read {
     display: inline-flex;
@@ -211,11 +232,6 @@
     height: 24.75rem;
 }
 
-.anotherbigwallet {
-    margin-top: 3rem;
-    margin-bottom: 3.75rem;
-    margin-left: 5rem;
-}
 
 .promiseprocess {
     padding-top: 3.75rem;
@@ -224,14 +240,6 @@
     padding-right: 1rem;
 }
 
-.descriptprocess {
-    margin-bottom: 3rem;
-    margin-top: -1rem;
-}
-
-.itemsofprocess {
-    margin-left: -4rem;
-}
 
 .bgol {
     background-color: var(--background-section);
@@ -255,9 +263,6 @@
     margin-bottom: 3rem;
 }
 
-.promiselist {
-    margin-left: -4rem;
-}
 
 .promiseitems {
     background-color: var(--background-section);
@@ -266,26 +271,19 @@
     margin-top: 1.5rem;
 }
 
-.testimonials {
-    margin-left: 1rem;
-    margin-right: 1rem;
-    margin-top: 3.75rem;
-    margin-bottom: 3.75rem;
-}
+
 
 .test {
-    margin-left: 18rem;
+    margin-left: 17rem;
     margin-bottom: -2rem;
 }
 
-.testul {
-    margin-left: -3.5rem;
-    margin-top: 3rem;
+.Testimonials ul {
+    margin-top: 4.8rem;
 }
 
-.raiting {
-    display: flex;
-    margin-left: -4rem;
+.raiting li{
+    display: inline-flex;
 }
 
 .stars {
@@ -327,10 +325,7 @@
     margin-left: 18rem;
 }
 
-.rewalletinthemedia {
-    padding-top: 3.75rem;
-    margin-bottom: 3rem;
-}
+
 
 .test1 {
     margin-left: 14.5rem;
@@ -346,7 +341,7 @@
 }
 
 .blog .iconblog {
-    width: 40rem;
+    width: 37rem;
     border-radius: 0.5rem;
 }
 
@@ -364,6 +359,8 @@
     display: inline-flex;
     gap: 1rem;
 }
+
+
 
 .avabruno {
     border-radius: 50%;
@@ -408,20 +405,8 @@
     display: inline;
 }
 
-.others {
-    margin-left: -4rem;
-    margin-right: -4rem;
-    margin-top: 2.5rem;
-    margin-bottom: 2.5rem;
-}
 
-.backgrs {
-    background-color: var(--background-section);
-    margin-left: -4rem;
-    border-radius: 0.5rem;
-    padding: 3.2rem;
-    margin-bottom: 2.4rem;
-}
+
 
 .under-p-white {
     color: var(#D0D5DD);
@@ -458,17 +443,42 @@
     list-style: none;
 }
 
+
+
 .blue-hr {
     background-color: var(--darkblue-color);
 }
 
-.startnow ul {
-    margin-left: -4rem;
-}
 
 .stepstostart {
     display: inline-flex;
     gap: 0.75rem;
+}
+
+.choseblock {
+    background-color: var(--darkblue-color);
+    padding-top: 8rem;
+    padding-bottom: 3.2rem;
+    border-radius: 0.5rem;
+}
+
+.choseblock p {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.choseblock ul {
+    padding-left: 7rem;
+    
+}
+
+
+.choseblock li {
+    background-color: var(--white);
+    list-style: none;
+    width: 20rem;
+    border-radius: 0.5rem;
+    margin: 0.8rem 1.6rem;
 }
 
 .touch {
@@ -495,30 +505,36 @@
     line-height: 2rem;
 }
 
-.getintouch a {
-    text-decoration: none;
-    color: var(--dark-white);
+.touch img {
+    border-radius: 0.5rem;
 }
 
 .contactmail {
     display: inline-flex;
-    gap: 2rem;
+    gap:2rem;
 }
 
 .contactphone {
     display: inline-flex;
-    gap: 2rem;
+    gap:2rem;
 }
 
-.foot {
-    padding: 1rem 2rem;
+.contactmail a {
+    text-decoration: none;
+    color: var(--dark-white);
 }
+
+.contactphone a{
+    text-decoration: none;
+    color: var(--dark-white);
+}
+
+
 
 .footer-content {
     list-style: none;
-    margin-top: 1.5rem;
+    margin-top: 2rem;
     margin-bottom: 1.5rem;
-    margin-left: -4rem;
 }
 
 .footer-content a {
@@ -530,8 +546,11 @@
     padding-bottom: 1rem;
 }
 
+
+
 .trustpilot ul {
     display: inline-flex;
+    gap:
 }
 
 .trustpilot li {
@@ -551,4 +570,13 @@
     gap: 2rem;
     margin-top: 2.5rem;
     margin-bottom: 1.5rem;
+}
+
+summary::marker {
+    content: none;
+}
+
+.nameofdetails {
+    display: inline-flex;
+    gap: 2rem
 }
