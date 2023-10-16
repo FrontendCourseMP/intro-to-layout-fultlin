@@ -43,29 +43,31 @@ header {
     top: 0;
     background-color: var(--white);
     display: flex;
-    
+    max-width: 1200px;
+    justify-content: center;
 
 }
 
 body {
-    box-sizing: border-box;
+    align-content: center;
     margin: 0;
     padding: 0;
 }
 
 .container {
-    display: flexbox;
-    padding: 6rem 1.6rem;
-    max-width: 1920;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+    margin: 6rem 1.6rem;
+    max-width: 1200px;
 }
 
 .wrapper {
-    display: inline-flex;
-    padding-left: 1.6rem;
-    padding-top: 1.6rem;
-    max-width: 192rem;
-    align-items: center;
-    justify-content: start;
+    display: flex;
+    margin-left: 1.6rem;
+    margin-top: 1.6rem;
+    justify-content: space-around;
 }
 
 .wrapper a {
@@ -73,14 +75,12 @@ body {
     font-family: Space-Semi, sans-serif;
     color: var(--darkblue-color);
     font-size: 3rem;
-
+    
 }
 
 .burger {
     border: none;
-    position: absolute;
-    right: 0;
-    padding-right: 2rem;
+
 }
 
 .navigation-blog {
@@ -91,6 +91,28 @@ body {
     margin-left: 4rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
+}
+
+
+.firs_page_descript {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-self: auto;
+    max-width: 45rem;
+    max-height: 45rem;
+}
+
+.firs_page_descript .button {
+}
+
+.about_lost {
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.wallets {
+    margin-top: 3rem;
 }
 
 .descript {
@@ -126,9 +148,9 @@ body {
     background: var(--orange-color);
     text-align: center;
     padding: 0.625rem 1.5rem;
-    margin: 0.5rem 0.5rem;
     margin-bottom: 0.5rem;
-    margin-top: 4.8rem;
+    max-width: 22rem;
+
 }
 
 .unlock {
@@ -167,10 +189,11 @@ body {
 
 
 .list {
-    column-count: 2;
-    column-gap: 10rem;
-    display: inline-block;
-    align-items: start;
+    display: flex;
+    justify-content: space-between;
+    max-width: 33rem;
+    flex-wrap: wrap;
+    margin: 1rem;
 }
 
 .element {
@@ -187,12 +210,71 @@ body {
 
 
 .list2 {
-    column-count: 2;
+    display: flex;
+    justify-content: space-around;
+    gap: 5rem;
+    flex-wrap: wrap;
+    margin: 1rem;
+    max-width: 120rem;
 }
 
-.element2 {
-    list-style: none;
+
+.others {
+    margin-bottom: 2.5rem;
 }
+
+
+.element2 {
+    display: flex;
+    list-style: none;
+    width: 11rem;
+    
+}
+
+
+.descript_why {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+
+.descript_why .line {
+    margin-top: 3.75rem;
+}
+
+.descript_why .head2-white {
+    margin-top: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.descript_why .under-p-white {
+    margin-bottom: 3.75rem;
+}
+
+.reasons_for_rewallet {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1.5rem;
+}
+
+.descript_why .button {
+    margin-top: 3rem;
+    margin-bottom: 3.75rem;
+}
+
+.whitelist {
+    list-style: none;
+    background-color: var(--background-section);
+    border-radius: 0.5rem;
+    padding: 3.2rem;
+    margin-bottom: 2.4rem;
+    max-width: 26rem;
+
+}
+
+
 
 .head2 {
     color: var(--darkblue-color);
@@ -220,12 +302,18 @@ body {
 }
 
 
-.processlist {
-    list-style: none;
-    border-radius: 0.5rem;
-    padding: 3.2rem;
-    margin-bottom: 2.4rem;
+.about_company {
+    display: flex;
+    justify-content: flex-start;
+    max-width: 37rem;
 }
+
+.descript_company .head2{
+    margin-top: 0.75rem;
+    margin-bottom: 2rem;
+    flex-direction: row;
+}
+
 
 
 .read {
@@ -251,14 +339,31 @@ body {
     height: 24.75rem;
 }
 
-
-.promiseprocess {
-    padding-top: 3.75rem;
-    padding-bottom: 3.75rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+.process {
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
+.text_process{
+    margin-top: 3.75rem;
+    margin-bottom: 3rem;
+}
+
+.processlist {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 80rem;
+}
+
+.items_process {
+    display: flex;
+    list-style: none;
+    border-radius: 0.5rem;
+    padding: 3.2rem;
+    margin-bottom: 2.4rem;
+    max-width: 34rem;
+    gap: 1.25rem;
+}
 
 .bgol {
     background-color: var(--background-section);
@@ -267,8 +372,8 @@ body {
     justify-content: center;
     align-items: center;
     gap: 0.625rem;
-    width: 2rem;
-    height: 2rem;
+    width: 4rem;
+    height: 4rem;
     border-radius: 0.5rem;
     color: var(--white);
     font-size: 1.375rem;
@@ -277,16 +382,34 @@ body {
     line-height: 1.875rem;
 }
 
+
+.text_process .head2-white {
+    padding-top: 0.75rem;
+    padding-bottom: 1rem;
+}
+
 .promisetoyou {
+    justify-content: flex-start;
+    flex-direction: column;
     margin-top: 3rem;
     padding-top: 3rem;
 }
 
-.headpromise {
-    margin-top: 0.75rem;
-    margin-bottom: 3rem;
+.descript_promise {
+    justify-content: flex-start;
 }
 
+.descript_promise .head2-white {
+    margin-top: 0.75rem;
+    margin-bottom: 3.75rem;
+} 
+
+.list_promise {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
 
 .promiseitems {
     background-color: var(--background-section);
@@ -296,11 +419,11 @@ body {
 }
 
 
-
-.test {
-    margin-left: 17rem;
-    margin-bottom: -2rem;
+.Testimonials .container {
+    max-width: 90rem;
 }
+ 
+
 
 .Testimonials ul {
     margin-top: 4.8rem;
@@ -315,7 +438,20 @@ body {
 }
 
 .testandblog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.testandblog .head2 {
     text-align: center;
+    margin-top: 0.75rem;
+    margin-bottom: 3rem;
+}
+
+.testandblog .line {
+    margin-bottom: 0.75rem;
+    justify-items: center;
 }
 
 .grey-otz {
@@ -338,34 +474,30 @@ body {
     text-align: center;
     padding: 0.62rem;
     max-width: 100%;
+    max-height: 3rem;
 }
 
-.slides {
-    padding: 1.5rem 1.5rem;
-}
-
-.media {
-    margin-left: 18rem;
-}
-
-
-
-.test1 {
-    margin-left: 14.5rem;
-    margin-bottom: -2rem;
-}
 
 .blogs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     margin-top: 3rem;
+    gap:1.5rem;
 }
 
 .blog {
+    max-width: 24rem;
     margin-bottom: 1.5rem;
 }
 
 .blog .iconblog {
     width: 37rem;
     border-radius: 0.5rem;
+}
+
+.rewalletinthemeida .button {
+    max-height: 3rem;
 }
 
 .seemore {
@@ -432,7 +564,7 @@ body {
 
 
 .under-p-white {
-    color: var(#D0D5DD);
+    color: var(--dark-white);
     font-size: 1rem;
     font-style: normal;
     font-weight: 400;
@@ -462,13 +594,6 @@ body {
     line-height: 1.875rem;
 }
 
-.whitelist {
-    list-style: none;
-    background-color: var(--background-section);
-    border-radius: 0.5rem;
-    padding: 3.2rem;
-    margin-bottom: 2.4rem;
-}
 
 
 .otz {
@@ -612,8 +737,8 @@ summary::marker {
 }
 
 .nameofdetails {
-    display: inline-flex;
-    gap: 2rem;
+    display: flex;
+    justify-content: space-between;
     font-family: Space-Semi, sans-serif;
     color: var(--darkblue-color);
     font-size: 2.2rem;
