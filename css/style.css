@@ -24,7 +24,6 @@
     --background-section: #2A2D51;
     font-size: 62.5%;
     font-style: normal;
-    overflow-x: hidden;
 }
 
 * {
@@ -32,6 +31,7 @@
     margin: 0;
     padding: 0;
     font-size: 62.5%;
+
 }
 
 html {
@@ -41,10 +41,7 @@ html {
 header {
     position: sticky;
     top: 0;
-    background-color: var(--white);
-    display: flex;
-    max-width: 1200px;
-    justify-content: center;
+    background-color: white;
 
 }
 
@@ -56,18 +53,22 @@ body {
 
 .container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-content: center;
     flex-wrap: wrap;
-    margin: 6rem 1.6rem;
-    max-width: 1200px;
+    padding: 2.5rem 1.6rem;
+    max-width: 1280px;
+    margin: auto;
+    overflow: hidden;
 }
 
 .wrapper {
     display: flex;
     margin-left: 1.6rem;
     margin-top: 1.6rem;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 1280px;
 }
 
 .wrapper a {
@@ -103,8 +104,6 @@ body {
     max-height: 45rem;
 }
 
-.firs_page_descript .button {
-}
 
 .about_lost {
     margin-top: 1.5rem;
@@ -182,9 +181,7 @@ body {
 }
 
 .anotherbigwallet {
-    margin-top: 3rem;
-    margin-bottom: 6rem;
-    margin-left: 5rem;
+    align-self: center;
 }
 
 
@@ -211,11 +208,10 @@ body {
 
 .list2 {
     display: flex;
-    justify-content: space-around;
-    gap: 5rem;
+    justify-content: flex-start;
+    gap: 7rem;
     flex-wrap: wrap;
-    margin: 1rem;
-    max-width: 120rem;
+    align-items: center;
 }
 
 
@@ -255,7 +251,7 @@ body {
 .reasons_for_rewallet {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     gap: 1.5rem;
 }
 
@@ -302,9 +298,7 @@ body {
 }
 
 
-.about_company {
-    display: flex;
-    justify-content: flex-start;
+.descript_company {
     max-width: 37rem;
 }
 
@@ -350,13 +344,15 @@ body {
 }
 
 .processlist {
-    display: flex;
+    display: flex; 
+    justify-content: space-between;
     flex-wrap: wrap;
     max-width: 80rem;
 }
 
 .items_process {
     display: flex;
+    justify-content: flex-start;
     list-style: none;
     border-radius: 0.5rem;
     padding: 3.2rem;
@@ -421,6 +417,7 @@ body {
 
 .Testimonials .container {
     max-width: 90rem;
+
 }
  
 
@@ -440,7 +437,7 @@ body {
 .testandblog {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
 }
 
 .testandblog .head2 {
@@ -471,29 +468,39 @@ body {
 
 .seereviews {
     background-color: #00B67A;
-    text-align: center;
+    text-align: start;
     padding: 0.62rem;
     max-width: 100%;
     max-height: 3rem;
+    margin-left: 3rem;
 }
 
 
 .blogs {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: flex-start;
     margin-top: 3rem;
-    gap:1.5rem;
+    gap:6rem;
 }
 
 .blog {
     max-width: 24rem;
     margin-bottom: 1.5rem;
+    position: relative;
 }
 
-.blog .iconblog {
-    width: 37rem;
+.iconblog {
+    max-width: 22rem;
     border-radius: 0.5rem;
+}
+
+
+.container .rewalletinthemeida {
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    margin: auto;
 }
 
 .rewalletinthemeida .button {
@@ -511,7 +518,8 @@ body {
 }
 
 .ava {
-    display: inline-flex;
+    display: flex;
+    align-items: center;
     gap: 1rem;
 }
 
@@ -522,11 +530,12 @@ body {
 }
 
 .author {
-    display: inline-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-top: 1.25rem;
     margin-bottom: 1.25rem;
     height: 2.8rem;
-    gap: 25rem;
 }
 
 .ava p {
@@ -538,7 +547,8 @@ body {
 }
 
 .iconblog {
-    width: 31.5rem;
+    justify-content: center;
+    max-width: 31.5rem;
 }
 
 .blog a {
@@ -616,6 +626,9 @@ body {
 }
 
 .choseblock {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     background-color: var(--darkblue-color);
     padding-top: 8rem;
     padding-bottom: 3.2rem;
@@ -627,10 +640,6 @@ body {
     margin-bottom: 4rem;
 }
 
-.choseblock ul {
-    padding-left: 7rem;
-    
-}
 
 
 .choseblock li {
@@ -648,34 +657,45 @@ body {
     margin-top: 3.75rem;
     margin-bottom: 3.75rem;
     border-radius: 0.5rem;
-}
-
-.getintouch {
-    padding: 2rem 1.5rem;
-}
-
-.getintouch img {
-    border-radius: 0.5rem;
-}
-
-.getintouch p {
-    font-size: 1.375rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 2rem;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 2rem;
 }
 
 .touch img {
+    max-width: 11rem;
+    max-height: 11rem;
     border-radius: 0.5rem;
 }
 
+.touch_content {
+    margin-top: 1.16rem;
+}
+
+.touch_content .head3-white {
+    margin-top: 2rem;
+}
+
+.contacts {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+    gap: 3rem;
+}
+
 .contactmail {
-    display: inline-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     gap:2rem;
 }
 
 .contactphone {
-    display: inline-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     gap:2rem;
 }
 
@@ -689,10 +709,29 @@ body {
     color: var(--dark-white);
 }
 
+.foot {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+}
 
+.first {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+}
+
+.logo_and_menu {
+    flex-direction: column;
+}
 
 .footer-content {
     list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     margin-top: 2rem;
     margin-bottom: 1.5rem;
 }
@@ -732,13 +771,49 @@ body {
     margin-bottom: 1.5rem;
 }
 
+.faq .head2 {
+    display: flex;
+    justify-content: center;
+}
+
+.steps_start {
+    padding: 5rem 5rem;
+}
+
+.wrapper_steps {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.wrapper_steps .head2 {
+    margin-top: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.wrapper_steps ul {
+    margin-top: 2rem;
+}
+
 summary::marker {
     content: none;
 }
 
+
+
+.accardion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 2rem;
+}
+
+
 .nameofdetails {
     display: flex;
     justify-content: space-between;
+    margin-top: 2rem;
+    align-items: center;
     font-family: Space-Semi, sans-serif;
     color: var(--darkblue-color);
     font-size: 2.2rem;
