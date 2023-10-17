@@ -104,6 +104,9 @@ body {
     max-height: 45rem;
 }
 
+.about_company {
+    justify-content: space-around;
+}
 
 .about_lost {
     margin-top: 1.5rem;
@@ -414,13 +417,9 @@ body {
     margin-top: 1.5rem;
 }
 
-
-.Testimonials .container {
-    max-width: 90rem;
-
+.Testimonials {
+    justify-content: space-around;
 }
- 
-
 
 .Testimonials ul {
     margin-top: 4.8rem;
@@ -476,29 +475,41 @@ body {
 }
 
 
+.rewalletinthemedia {
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.elemets_of_blogs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
 .blogs {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     margin-top: 3rem;
-    gap:6rem;
+    gap: 3rem;
 }
 
 .blog {
-    max-width: 24rem;
+    max-width: 50%;
     margin-bottom: 1.5rem;
     position: relative;
 }
 
 .iconblog {
-    max-width: 22rem;
+    max-width: 50%;
     border-radius: 0.5rem;
 }
 
 
 .container .rewalletinthemeida {
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     flex-wrap: nowrap;
     margin: auto;
 }
@@ -658,9 +669,10 @@ body {
     margin-bottom: 3.75rem;
     border-radius: 0.5rem;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 2rem;
+    margin: auto;
 }
 
 .touch img {
@@ -769,6 +781,11 @@ body {
     gap: 2rem;
     margin-top: 2.5rem;
     margin-bottom: 1.5rem;
+}
+
+.faq {
+    justify-content: space-around;
+    flex-direction: column;
 }
 
 .faq .head2 {
