@@ -41,6 +41,7 @@ html {
 
 header {
     position: sticky;
+    z-index: 100;
     top: 0;
     background-color: white;
     z-index: 2;
