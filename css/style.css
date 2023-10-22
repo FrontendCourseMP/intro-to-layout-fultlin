@@ -36,13 +36,14 @@
 
 html {
     margin-left: 0;
+
 }
 
 header {
     position: sticky;
     top: 0;
     background-color: white;
-
+    z-index: 2;
 }
 
 body {
@@ -71,21 +72,98 @@ body {
     max-width: 1280px;
 }
 
-.wrapper a {
+.logo {
     text-decoration: none;
     font-family: Space-Semi, sans-serif;
     color: var(--darkblue-color);
     font-size: 3rem;
-    
+}
+
+@media (max-width:817px) {
+    .navigation-blog {
+        display: none;
+    }
+}
+
+@media (min-width:816px) {
+    .burger {
+        display: none;
+    }
+
+    .navigation-blog {
+        display: flex;
+    }
 }
 
 .burger {
     border: none;
-
 }
 
 .navigation-blog {
-    display: none;
+    align-self: center;
+    gap: 5rem;
+}
+
+.navigation-blog ul {
+    display: inline-flex;
+    gap: 2rem;
+}
+
+.navigation-blog li {
+    list-style: none;
+    text-align: center;
+    margin: auto;
+}
+
+.navigation-blog a {
+    color: #667085;
+    font-family: Space-Semi, sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.5rem;
+    text-decoration: none;
+}
+
+.lang__start {
+    display: flex;
+    gap: 2rem;
+}
+
+.lang__start a {
+    font-family: Space-Semi, sans-serif;
+    color: var(--darkblue-color);
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.75rem;
+}
+
+.lang {
+    display: flex;
+    color: #667085;
+    font-family: Space-Semi, sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.5rem;
+    text-align: center;
+    gap: 0.25rem;
+    border: none;
+    align-items: center;
+}
+
+.start {
+    text-decoration: none;
+    font-family: Space-Semi, sans-serif;
+    color: var(--darkblue-color);
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.75rem;
+    align-self: center;
+    padding: 1.125rem 5rem;
+    border:
 }
 
 .bigwallet {
@@ -165,6 +243,18 @@ body {
     line-height: 1.75rem;
 }
 
+.unlock1 {
+    font-family: Space-Semi, sans-serif;
+    text-decoration: none;
+    color: white;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.75rem;
+    margin: 3rem auto 0;
+}
+
+
 .under-p {
     font-family: Space-Medium, sans-serif;
     color: var(--p-color);
@@ -196,6 +286,8 @@ body {
     margin: 1rem;
 }
 
+
+
 .element {
     list-style: none;
 }
@@ -205,7 +297,7 @@ body {
 }
 
 .wall2 {
-    width: 15rem;
+    width: 13rem;
 }
 
 
@@ -215,6 +307,7 @@ body {
     gap: 7rem;
     flex-wrap: wrap;
     align-items: center;
+    margin: 0 auto;
 }
 
 
@@ -226,15 +319,34 @@ body {
 .element2 {
     display: flex;
     list-style: none;
-    width: 11rem;
-    
+    width: 13rem;
+
 }
 
+
+
+.eclipse1 {
+    position: absolute;
+    margin-top: -2.5rem;
+    margin-left: -1.6rem;
+    z-index: 0;
+    max-width: 90%;
+}
+
+.eclipse2 {
+    position: absolute;
+    z-index: 0;
+    max-width: 90%;
+    margin-right: -2.5rem;
+}
 
 .descript_why {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    margin: 0 auto;
+    z-index: 1;
+
 }
 
 
@@ -249,12 +361,14 @@ body {
 
 .descript_why .under-p-white {
     margin-bottom: 3.75rem;
+    z-index: 10;
 }
 
 .reasons_for_rewallet {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin: 0 auto;
     gap: 1.5rem;
 }
 
@@ -298,6 +412,7 @@ body {
 
 .dark {
     background-color: var(--darkblue-color);
+    z-index: -2;
 }
 
 
@@ -305,7 +420,7 @@ body {
     max-width: 37rem;
 }
 
-.descript_company .head2{
+.descript_company .head2 {
     margin-top: 0.75rem;
     margin-bottom: 2rem;
     flex-direction: row;
@@ -334,6 +449,7 @@ body {
 .bigwallet2 {
     width: 24.375rem;
     height: 24.75rem;
+    margin-top: 1rem;
 }
 
 .process {
@@ -341,13 +457,13 @@ body {
     justify-content: flex-start;
 }
 
-.text_process{
+.text_process {
     margin-top: 3.75rem;
     margin-bottom: 3rem;
 }
 
 .processlist {
-    display: flex; 
+    display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     max-width: 80rem;
@@ -401,31 +517,34 @@ body {
 .descript_promise .head2-white {
     margin-top: 0.75rem;
     margin-bottom: 3.75rem;
-} 
+}
 
 .list_promise {
     display: flex;
     flex-direction: row;
     gap: 2rem;
     flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 0 auto;
 }
 
 .promiseitems {
     background-color: var(--background-section);
     padding: 2rem 2rem;
     border-radius: 0.5rem;
-    margin-top: 1.5rem;
+    margin: 1.5rem auto;
 }
 
 .Testimonials {
     justify-content: space-around;
+    margin: 0 auto;
 }
 
 .Testimonials ul {
     margin-top: 4.8rem;
 }
 
-.raiting li{
+.raiting li {
     display: inline-flex;
 }
 
@@ -437,6 +556,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 
 .testandblog .head2 {
@@ -463,15 +583,19 @@ body {
     font-family: "Space-Semi", sans-serif;
     text-decoration: none;
     color: var(--dark-white);
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.75rem;
 }
 
 .seereviews {
     background-color: #00B67A;
     text-align: start;
-    padding: 0.62rem;
-    max-width: 100%;
-    max-height: 3rem;
-    margin-left: 3rem;
+    padding: 0.62rem 1.5rem;
+    max-width: 20rem;
+    height: 3rem;
+    text-align: center;
 }
 
 
@@ -480,29 +604,27 @@ body {
     flex-direction: column;
 }
 
-.elemets_of_blogs {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
 
-}
 
 .blogs {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    margin-top: 3rem;
-    gap: 3rem;
+    margin: 3.75rem auto;
+    padding: 0 auto;
+    gap: 10rem;
+    max-width: auto;
 }
 
 .blog {
-    max-width: 50%;
+    max-width: 31.5rem;
     margin-bottom: 1.5rem;
     position: relative;
+    margin: 0 auto;
 }
 
 .iconblog {
-    max-width: 50%;
+    max-width: 25rem;
     border-radius: 0.5rem;
 }
 
@@ -526,6 +648,7 @@ body {
     font-style: normal;
     font-weight: 600;
     line-height: 1.75rem;
+    margin: 0 auto;
 }
 
 .ava {
@@ -701,14 +824,14 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap:2rem;
+    gap: 2rem;
 }
 
 .contactphone {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap:2rem;
+    gap: 2rem;
 }
 
 .contactmail a {
@@ -716,7 +839,7 @@ body {
     color: var(--dark-white);
 }
 
-.contactphone a{
+.contactphone a {
     text-decoration: none;
     color: var(--dark-white);
 }
