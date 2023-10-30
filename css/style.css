@@ -1011,6 +1011,10 @@ summary::marker {
     flex-direction: column;
   }
 
+  .choseblock {
+    width: 34rem;
+  }
+
   .touch {
     justify-content: center;
   }
