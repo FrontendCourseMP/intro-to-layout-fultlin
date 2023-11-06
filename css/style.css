@@ -17,7 +17,7 @@
   --darkblue-color: #1a1e42;
   --darkblue-for-text: rgba(26, 30, 66, 0.8);
   --orange-color: orange;
-  --p-color: #667085;
+  --p-color: #98a2b3;
   --gray-400: #98a2b3;
   --white: white;
   --dark-white: #d0d5dd;
@@ -66,18 +66,16 @@ body {
 }
 
 .container {
-  padding: 2.5rem 1.6rem;
+  padding: 4rem 1.6rem;
   max-width: 1280px;
   margin: 0 auto;
 }
 
 .wrapper {
   display: flex;
-  margin-left: 1.6rem;
-  margin-top: 1.6rem;
   justify-content: space-between;
-  margin: auto;
   max-width: 1280px;
+  padding: 1.8rem 1.6rem;
 }
 
 .logo {
@@ -154,12 +152,12 @@ body {
 .firs_page_descript {
   margin: 0 auto;
   max-width: 45rem;
-  max-height: 45rem;
+  max-height: 120rem;
   overflow: hidden;
 }
 
 .about_company {
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .about_lost {
@@ -171,17 +169,21 @@ body {
   margin-top: 3rem;
 }
 
+.element img {
+  max-width: max-content;
+  max-height: max-content;
+}
+
 .descript {
   color: var(--darkblue-color);
-  font-size: 3rem;
+  font-size: 4.8rem;
   font-weight: 600;
-  line-height: 3.5rem;
   letter-spacing: -0.12rem;
 }
 
 .colortext {
   color: orange;
-  font-size: 3rem;
+  font-size: 4.8rem;
   font-weight: 600;
   line-height: 3.5rem;
   letter-spacing: -0.12rem;
@@ -190,27 +192,36 @@ body {
 .grey {
   color: var(--p-color);
   font-family: Space-Regular, sans-serif;
-  font-size: 1.125rem;
+  font-size: 1.8rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 1.625rem;
+  line-height: 2.6rem;
 }
 
 .button {
-  border-radius: 0.25rem;
+  display: block;
+  border-radius: 0.4rem;
   background: var(--orange-color);
   text-align: center;
-  padding: 0.625rem 1.5rem;
-  max-width: 22rem;
+  padding: 1rem 2.4rem;
+  max-width: max-content;
+  margin: 0 auto;
 }
 
 .unlock {
   text-decoration: none;
   color: white;
-  font-size: 1.125rem;
+  font-size: 1.8rem;
   font-style: normal;
   font-weight: 600;
-  line-height: 1.75rem;
+  line-height: 2.8rem;
+}
+
+.reasons_for_rewallet {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 130rem;
 }
 
 .reasons_for_rewallet li {
@@ -220,39 +231,44 @@ body {
 .unlock1 {
   text-decoration: none;
   color: white;
-  font-size: 1.125rem;
+  font-size: 1.8rem;
   line-height: 1.75rem;
   margin: 0 auto;
   margin-top: 2rem;
+  padding: 1rem 2.4rem;
 }
 
 .under-p {
   font-family: Space-Medium, sans-serif;
   color: var(--p-color);
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: 1.8rem;
 }
 
 .under-p-white {
   font-family: Space-Medium, sans-serif;
   color: var(--dark-white);
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  font-weight: 400;
+}
+
+.whitelist .under-p-white {
+  font-size: 1.6rem;
 }
 
 .anotherbigwallet {
   align-self: center;
-  max-width: 248px;
+  max-width: max-content;
   margin: 0 auto;
+  margin-top: 4.8rem;
 }
 
 .list {
   display: flex;
-  justify-content: space-around;
-  max-width: 33rem;
   flex-wrap: wrap;
   gap: 1rem;
   margin: 1rem 0;
+  max-width: 54.2rem;
 }
 
 .element {
@@ -268,7 +284,12 @@ body {
 }
 
 .wall2 {
-  width: 13rem;
+  max-width: 17rem;
+  min-width: 16rem;
+}
+
+#wallets .container {
+  background-color: #F9FAFB;
 }
 
 .list2 {
@@ -328,8 +349,8 @@ body {
 }
 
 .descript_why .button {
-  margin-top: 3rem;
-  margin-bottom: 3.75rem;
+  margin: 0 auto;
+  margin-top: 4.8rem;
 }
 
 .whitelist {
@@ -337,19 +358,19 @@ body {
   background-color: var(--background-section);
   border-radius: 0.5rem;
   padding: 3.2rem;
+  max-width: 38rem;
   margin: 0 auto;
-  max-width: 26rem;
 }
 
 .head2 {
   color: var(--darkblue-color);
   font-size: 4.4rem;
-  line-height: 3.25rem;
-  letter-spacing: -0.11rem;
+  line-height: 5.2rem;
+  letter-spacing: -0.176rem;
 }
 
 .descript_company {
-  max-width: 37rem;
+  max-width: 45rem;
   margin: 0 auto;
 }
 
@@ -378,25 +399,27 @@ body {
 
 .bigwallet {
   display: flex;
+  max-width: 29rem;
+  max-height: 33.3rem;
   margin: 0 auto;
 }
 
 .bigwallet2 {
-  width: 24.375rem;
-  height: 24.75rem;
-  margin-top: 1rem;
+  width: 100%;
+  height: 100%;
 }
 
 .text_process {
   margin-top: 3.75rem;
   margin-bottom: 3rem;
   max-width: 80rem;
+  align-self: start;
 }
 
 .processlist {
   display: flex;
   margin: 0 auto;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
   max-width: 80rem;
 }
@@ -407,7 +430,7 @@ body {
   justify-content: flex-start;
   list-style: none;
   border-radius: 0.5rem;
-  margin: 0 0 2.4rem 0;
+  margin: 0 auto 2.4rem ;
   max-width: 34rem;
   gap: 1.25rem;
 }
@@ -415,7 +438,7 @@ body {
 .bgol {
   background-color: var(--background-section);
   display: flex;
-  padding: 0.75rem 0.625rem;
+  padding: 1.2rem 1rem;
   justify-content: center;
   align-items: center;
   gap: 0.625rem;
@@ -423,8 +446,7 @@ body {
   height: 4rem;
   border-radius: 0.5rem;
   color: var(--white);
-  font-size: 1.375rem;
-  line-height: 1.875rem;
+  font-size: 2rem;
 }
 
 .text_process .head2-white {
@@ -434,6 +456,7 @@ body {
 
 .promisetoyou {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   margin-top: 3rem;
   padding-top: 3rem;
@@ -441,6 +464,8 @@ body {
 
 .descript_promise {
   align-items: center;
+  max-width: max-content;
+  align-self: center;
 }
 
 .descript_promise .head2-white {
@@ -458,8 +483,12 @@ body {
 
 .promiseitems {
   background-color: var(--background-section);
-  padding: 2rem 2rem;
+  padding: 3.2rem;
   border-radius: 0.5rem;
+}
+
+.promiseitems .head3-white {
+  margin-top: 2.4rem;
 }
 
 .Testimonials .container {
@@ -470,7 +499,12 @@ body {
 .Testimonials {
   justify-content: space-around;
   margin: 0 auto;
-  background-color: #d0d5dd;
+  background-color: #F9FAFB;
+}
+
+.Testimonials .grey{
+  font-size: 1.8rem;
+  color: rgba(26, 30, 66, 0.80)
 }
 
 .Testimonials ul {
@@ -509,25 +543,22 @@ body {
 .grey-otz {
   color: var(--p-color);
   font-family: Space-Regular, sans-serif;
-  font-size: 1.125rem;
-  font-style: normal;
+  font-size: 1.8rem;
   font-weight: 400;
-  line-height: 1.625rem;
+  line-height: 2.6rem;
+  margin-top: 2.4rem;
 }
 
 .reviews {
   text-decoration: none;
   color: var(--dark-white);
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
 }
 
 .seereviews {
   background-color: #00b67a;
-  text-align: start;
-  padding: 0.62rem 1.5rem;
-  max-width: 25rem;
-  height: 3rem;
+  padding: 1rem 2.4rem;
   text-align: center;
   margin: 0 auto;
 }
@@ -573,10 +604,10 @@ body {
 .seemore {
   text-decoration: none;
   color: var(--white);
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+  font-size: 1.8rem;
   align-items: center;
   margin: 0 auto;
+  padding: 1rem 2.4rem;
 }
 
 .ava {
@@ -644,14 +675,14 @@ body {
 .head3-white {
   font-family: Space-Semi, sans-serif;
   color: var(--white);
-  font-size: 1.375rem;
-  line-height: 1.875rem;
+  font-size: 2.2rem;
+  line-height: 3rem;
 }
 
 .otz {
   list-style: none;
   border-radius: 0.5rem;
-  padding: 3.2rem;
+  padding: 2.4rem;
   margin: 0 auto 2.4rem;
   max-width: 43rem;
   background-color: var(--white);
@@ -680,7 +711,7 @@ blockquote .head3 {
   padding-bottom: 3.2rem;
   border-radius: 0.5rem;
   max-width: 34rem;
-  margin: auto;
+  margin: 4.6rem auto 1rem;
 }
 
 .choseblock p {
@@ -702,10 +733,10 @@ blockquote .head3 {
 
 .touch {
   background-color: var(--darkblue-color);
-  margin: 3.75rem auto;
+  margin: 3.75rem auto+10rem;
   border-radius: 0.5rem;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
   gap: 2rem;
   background-image: url("../icons/Ellipse_130.png"),
@@ -781,6 +812,10 @@ blockquote .head3 {
   flex-direction: column;
 }
 
+.footer {
+  background-color: #d0d5dd;
+}
+
 .footer-content {
   list-style: none;
   display: flex;
@@ -813,8 +848,9 @@ blockquote .head3 {
   list-style: none;
 }
 
-.raiting {
+.otz .raiting {
   gap: 1rem;
+  margin-top: 0;
 }
 
 .score {
@@ -833,6 +869,7 @@ blockquote .head3 {
   flex-direction: column;
   padding-top: 6rem;
   padding-bottom: 6rem;
+  background-color: #F9FAFB;
 }
 
 .faq .head2 {
@@ -841,12 +878,13 @@ blockquote .head3 {
 }
 
 .steps_start {
-  padding: 5rem 5rem;
+  padding: 6rem 1.6rem;
   justify-content: space-around;
 }
 
 .wrapper_steps {
   margin: 0 auto;
+  max-width: 61.6rem;
 }
 
 .wrapper_steps .head2 {
@@ -855,11 +893,13 @@ blockquote .head3 {
 }
 
 .wrapper_steps ul {
-  margin-top: 2rem;
+  max-width: max-content;
+  margin: 2rem auto 0rem;
+  gap: 1.6rem;
 }
 
 .wrapper_steps li {
-  margin: 0 auto;
+  margin-top: 1.6rem;
 }
 
 summary::marker {
@@ -880,7 +920,7 @@ summary::marker {
   align-items: center;
   color: var(--darkblue-color);
   font-size: 2.2rem;
-  line-height: 1.875rem;
+  line-height: 3.2rem;
 }
 
 .footmenu {
@@ -916,6 +956,10 @@ summary::marker {
   .footer-content {
     flex-direction: column;
   }
+
+  .whitelist {
+    margin: 0 auto;
+  }
 }
 
 @media (min-width: 815px) {
@@ -940,16 +984,33 @@ summary::marker {
 
   .firs_page_descript {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     flex-direction: column;
     align-self: auto;
-    max-width: 45rem;
-    max-height: 45rem;
+    max-width: 60rem;
+    max-height: 80rem;
     margin: 0;
   }
 
+  .button {
+    margin-left: 0;
+  }
+
+  .promisetoyou .button {
+    margin: 6rem auto 0 auto;
+  }
+
+  .seemore {
+    margin: 0 auto;
+  }
+
+  .descript {
+    font-size: 6rem;
+  }
+
   .bigwallet {
-    margin: 0;
+    width: 53.7rem;
+    height: 61.5rem;
   }
 
   .first_page {
@@ -964,12 +1025,22 @@ summary::marker {
   }
 
   .text__why {
-    align-self: center;
+    align-self: flex-start;
     width: 810px;
+    margin-left: 4rem;
   }
 
   .about_company {
     flex-direction: row-reverse;
+  }
+
+  .anotherbigwallet {
+    margin: 3rem auto 0;
+  }
+
+  .bigwallet2 {
+    width: 52.6rem;
+    height: 53.6rem;
   }
 
   .accardion {
@@ -995,7 +1066,8 @@ summary::marker {
   }
 
   .descript_promise {
-    width: 80rem;
+    align-self: flex-start;
+    margin-left: 4rem;
   }
 
   .promisetoyou {
@@ -1010,12 +1082,19 @@ summary::marker {
     flex-direction: column;
   }
 
+  .wrapper_steps ul {
+    max-width: max-content;
+    margin-left: 0;
+    gap: 1.6rem;
+  }
+
   .choseblock {
     width: 34rem;
   }
 
   .touch {
-    justify-content: center;
+    justify-content: flex-start;
+    padding-left: 10rem;
   }
 
   .first {
@@ -1033,5 +1112,4 @@ summary::marker {
     align-items: center;
     gap: 10rem;
   }
-  
 }
