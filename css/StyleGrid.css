@@ -292,6 +292,93 @@ header {
   text-decoration: none;
 }
 
+.list--images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  max-width: 600px;
+  margin: 10rem auto 5rem;
+}
+
+.moscow {
+  width: 20rem;
+  z-index: -1;
+  
+}
+
+.link {
+  font-size: 5rem;
+  color: aqua;
+  text-decoration: none;
+  z-index: 1;
+  justify-self: center;
+}
+
+.link--1 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  place-self: center;
+}
+
+.moscow--1 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.link--2 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  place-self: center;
+}
+
+.moscow--2 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.link--3 {
+  grid-column: 3/4;
+  grid-row: 1/2;
+  place-self: center;
+}
+
+.moscow--3 {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+.link--4 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  place-self: center;
+}
+
+.moscow--4 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.link--5 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  place-self: center;
+}
+
+.moscow--5 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.link--6 {
+  grid-column: 3/4;
+  grid-row: 2/3;
+  place-self: center;
+}
+
+.moscow--6 {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
 .text {
   font-size: 2rem;
   grid-column-start: 1;
