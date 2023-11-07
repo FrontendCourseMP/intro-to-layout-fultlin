@@ -268,7 +268,8 @@ header {
   display: grid;
   grid-template-columns:
     [start-column] 10rem [column-2]
-    20rem [column-3] 15rem [column-4] 20rem;
+    10rem [column-3] 10rem [column-4] 10rem
+    [column-5] 10rem [column-6] 10rem;
   grid-template-rows:
     [start-row] auto [row-2] auto [row-3] auto;
   margin: 0 auto;
@@ -396,34 +397,35 @@ header {
 
 .img--1 {
   grid-column-start: 2;
-  grid-column-end: 5;
+  grid-column-end: 7;
   grid-row: 1/1;
-  grid-area: row-2 / column-start / 0 / column-4;
   margin: 0 auto;
   object-fit: cover;
 }
 
 .img--2 {
-
+  grid-column: 2/4;
   place-self: center;
 }
 
 .img--3 {
-
   place-self: center;
 }
 
 .img--4 {
-  
+  grid-column: 5 / 7;
+  grid-row: 2/3;
   place-self: center;
 }
 
 .img--5 {
   grid-column: 2 / 4;
-  grid-row: 2/3;
-  object-fit:cover;
-  width: 20rem;
+  grid-row: 3/4;
   place-self: center;
+}
+
+.img--6 {
+  grid-column: 5/7;
 }
 
 .footer-content {
