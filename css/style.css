@@ -399,14 +399,12 @@ body {
 
 .bigwallet {
   display: flex;
-  max-width: 29rem;
-  max-height: 33.3rem;
   margin: 0 auto;
 }
 
 .bigwallet2 {
-  width: 100%;
-  height: 100%;
+  width: 39rem;
+  height: 39.6rem;
 }
 
 .text_process {
@@ -430,7 +428,7 @@ body {
   justify-content: flex-start;
   list-style: none;
   border-radius: 0.5rem;
-  margin: 0 auto 2.4rem ;
+  margin: 0 auto 2.4rem;
   max-width: 34rem;
   gap: 1.25rem;
 }
@@ -502,7 +500,7 @@ body {
   background-color: #F9FAFB;
 }
 
-.Testimonials .grey{
+.Testimonials .grey {
   font-size: 1.8rem;
   color: rgba(26, 30, 66, 0.80)
 }
@@ -960,6 +958,11 @@ summary::marker {
   .whitelist {
     margin: 0 auto;
   }
+
+  .bigwallet {
+    max-width: 29rem;
+    max-height: 33.3rem;  
+  }
 }
 
 @media (min-width: 815px) {
@@ -1059,6 +1062,7 @@ summary::marker {
   .processlist {
     justify-content: space-between;
   }
+
   .text_process {
     justify-content: flex-start;
     align-self: center;
