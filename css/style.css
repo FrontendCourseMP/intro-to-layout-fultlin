@@ -1,16 +1,16 @@
 @font-face {
   font-family: "Space-Semi";
-  src: url("fonts/space_Groteks/static/SpaceGrotesk-SemiBold.ttf");
+  src: url("./fonts/space_Groteks/static/SpaceGrotesk-SemiBold.ttf");
 }
 
 @font-face {
   font-family: "Space-Medium";
-  src: url("fonts/space_Groteks/static/SpaceGrotesk-Medium.ttf");
+  src: url("./fonts/space_Groteks/static/SpaceGrotesk-Medium.ttf");
 }
 
 @font-face {
   font-family: "Space-Regular";
-  src: url("fonts/space_Groteks/static/SpaceGrotesk-Regular.ttf");
+  src: url("./fonts/space_Groteks/static/SpaceGrotesk-Regular.ttf");
 }
 
 :root {
@@ -403,8 +403,8 @@ body {
 }
 
 .bigwallet2 {
-  width: 33rem;
-  height: 33.6rem;
+  width: 30rem;
+  height: 30.6rem;
 }
 
 .text_process {
