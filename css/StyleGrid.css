@@ -1,16 +1,16 @@
 @font-face {
   font-family: "Space-Semi";
-  src: url("fonts/space_Groteks/static/SpaceGrotesk-SemiBold.ttf");
+  src: url("../fonts/space_Groteks/static/SpaceGrotesk-SemiBold.ttf");
 }
 
 @font-face {
   font-family: "Space-Medium";
-  src: url("fonts/space_Groteks/static/SpaceGrotesk-Medium.ttf");
+  src: url("../fonts/space_Groteks/static/SpaceGrotesk-Medium.ttf");
 }
 
 @font-face {
   font-family: "Space-Regular";
-  src: url("fonts/space_Groteks/static/SpaceGrotesk-Regular.ttf");
+  src: url("../fonts/space_Groteks/static/SpaceGrotesk-Regular.ttf");
 }
 
 :root {
@@ -314,6 +314,10 @@ header {
 
 .moscow {
   width: 20rem;
+  z-index: 1;
+}
+
+.moscow:hover {
   z-index: -1;
 }
 
@@ -321,7 +325,6 @@ header {
   font-size: 5rem;
   color: aqua;
   text-decoration: none;
-  z-index: 1;
   justify-self: center;
 }
 
@@ -404,9 +407,9 @@ img {
 
 .img--1 {
   grid-column: 1/7;
-  object-fit: unset;
-  height: 100%;
-  width: 100%;
+  transform: scaleX(3);
+  height: 20rem;
+  width: 120rem;
 }
 
 .img--2 {
@@ -420,6 +423,7 @@ img {
   width: 75%;
   height: 20rem;
   place-self: center;
+  transform: scaleY(1.35);
 }
 
 .img--4 {
