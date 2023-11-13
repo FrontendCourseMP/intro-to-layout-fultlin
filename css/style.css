@@ -1189,6 +1189,11 @@ summary::marker {
     flex-wrap: wrap;
     margin-top: 4rem;
     justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .wrapper_steps br {
+    display: none;
   }
 
   .choseblock li {
