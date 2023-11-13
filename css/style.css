@@ -1034,6 +1034,9 @@ summary::marker {
     justify-content: center;
   }
 
+  .text_process {
+    margin-left: 0;
+  }
 }
 
 @media (max-width: 1500px) {
@@ -1141,7 +1144,6 @@ summary::marker {
   }
 
   .text_process {
-    justify-content: flex-start;
     align-self: center;
     width: max-content;
     margin-left: 2rem;
@@ -1242,6 +1244,13 @@ summary::marker {
 
 @media (min-width: 1254px) {
   .text_process {
-    margin-left: 0;
+    margin-left: 2rem;
+    margin-left: 2rem;
+  }
+}
+
+@media (max-width: 1191px) {
+  .text_process {
+    margin: 3.75rem auto 3rem;
   }
 }
