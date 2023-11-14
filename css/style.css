@@ -204,7 +204,6 @@ body {
   background: var(--orange-color);
   text-align: center;
   padding: 1rem 2.4rem;
-  max-width: max-content;
   margin: 0 auto;
 }
 
@@ -344,11 +343,12 @@ body {
 }
 
 .text__why .head2-white {
-  margin-top: 0.75rem;
+  margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
 .text__why .under-p-white {
+  margin-top: 2rem;
   margin-bottom: 3.75rem;
 }
 
@@ -418,7 +418,7 @@ body {
 }
 
 .text_process .line {
-  margin-bottom: 1.75rem;
+  margin-bottom: 1rem;
 }
 
 .processlist {
@@ -454,7 +454,7 @@ body {
 }
 
 .text_process .head2-white {
-  padding-top: 0.75rem;
+  padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
@@ -752,11 +752,22 @@ blockquote .head3 {
   justify-content: center;
   flex-direction: column;
   background-color: var(--darkblue-color);
-  padding-top: 8rem;
+  padding-top: 2rem;
   padding-bottom: 3.2rem;
   border-radius: 0.5rem;
   max-width: 34rem;
   margin: 4.6rem auto 1rem;
+}
+
+.steps_chose {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+}
+
+.stepper {
+  list-style: none;
 }
 
 .choseblock p {
@@ -765,7 +776,7 @@ blockquote .head3 {
   margin: 0 auto;
 }
 
-.choseblock ul {
+.choseblock .shosewallets {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -773,7 +784,7 @@ blockquote .head3 {
   margin-top: 4rem;
 }
 
-.choseblock li {
+.choseblock .chosewallet {
   background-color: var(--white);
   list-style: none;
   width: 20rem;
@@ -1038,6 +1049,27 @@ summary::marker {
   .text_process {
     margin-left: 0;
   }
+
+  .stepper_line img {
+    max-width: 4.8rem;
+  }
+
+  .seemore {
+    margin: 0 auto;
+  }
+
+  .unlock .button {
+    width: 100%;
+  }
+
+  .button {
+    width: 100%;
+    margin: 4.8rem 0;
+  }
+
+  .seereviews {
+    margin: 0;
+  }
 }
 
 @media (max-width: 1500px) {
@@ -1082,6 +1114,10 @@ summary::marker {
 
   .promisetoyou .button {
     margin: 6rem auto 0 auto;
+  }
+
+  .unlock1 .button {
+    max-width: 100%;
   }
 
   .seemore {
@@ -1165,6 +1201,10 @@ summary::marker {
     display: none;
   }
 
+  .stepper_line img {
+    max-width: 8rem;
+  }
+
   .steps_start {
     gap: 4.8rem;
     justify-content: center;
@@ -1189,7 +1229,7 @@ summary::marker {
     padding: 3.2rem;
   }
 
-  .choseblock ul {
+  .choseblock .shosewallets {
     display: flex;
     max-width: 55.2rem;
     gap: 2.4rem;
@@ -1203,7 +1243,7 @@ summary::marker {
     display: none;
   }
 
-  .choseblock li {
+  .choseblock .chosewallet {
     width: 24.8rem;
     padding: 1.6rem;
     text-align: center;
