@@ -759,6 +759,10 @@ blockquote .head3 {
   margin: 4.6rem auto 1rem;
 }
 
+input[type='radio'] {
+  color: white;
+}
+
 .steps_chose {
   display: flex;
   align-items: center;
@@ -875,7 +879,11 @@ blockquote .head3 {
 
 .footer {
   background-color: #d0d5dd;
+  position: sticky;
+  top: 1100px;
 }
+
+
 
 .footer-content {
   list-style: none;
