@@ -70,29 +70,33 @@
 
     <main>
         <section class="container reg">
-            <form action="//httpbin.org/post" method='post' name="regisration">
+            <form action="//httpbin.org/post" method='post' name="regisration" class="regisration__form">
                 <fieldset class="form-content">
                     <legend>Personal information</legend>
                     <label for="name" class="name">
-                        Name
+                        <span>Name</span>
                         <input type="text" name="name" id="name" placeholder="Ivan" required>
                     </label>
 
-                    <Label class="sex">
-                        Sex
+                    <Label class="gender">
+                        Gender
                         <div>
-                            <input type="checkbox" name="sex" id="sex" value="Male" checked>Male
-                            <input type="checkbox" name="sex" id="sex" value="Female">Female
+                            <span class="gender__choice">Male</span>
+                            <input type="radio" name="sex" id="gender" value="Male" checked> 
+                            <span class="gender__choice" for="genderf">Female</span>
+                            <input type="radio" name="sex" id="genderf" value="Female">
                         </div>
                     </Label>
 
-                    <label class="birthday">Birthday
+                    <label class="birthday">
+                        <span>Birthday</span>
                         <input type="date" name="birthday" id="birthday" placeholder="01.01.2000" required>
                     </label>
 
-                    <lable for="password" class="password">Password
-                        <input type="password" name="password" id="password" value="password">
-                        <label><input type="checkbox" class="password-checkbox"> Показать пароль</label>
+                    <lable for="password" class="password">
+                        <span>Password</span>
+                        <input type="password" name="password" id="password" placeholder="Введите пароль" required>
+                        <label><input type="checkbox" class="password-checkbox">Показать пароль</label>
                     </lable>
 
                 </fieldset>
@@ -100,15 +104,18 @@
                 <fieldset class="form-content">
                     <legend>Contact information</legend>
 
-                    <label class="email">Email
-                        <input type="email" name="email" id="email" placeholder="example@gmail.com" required>
+                    <label class="email">
+                        Email
                     </label>
+                    <input type="email" name="email" id="email" placeholder="example@gmail.com" required>
+
 
 
                     <label class="tel">Telephone</label>
                     <input type="tel" name="tel" id="tel" placeholder="89999999999" required>
 
-                    <label for="daytime" class="daytime">Convenient interval for communication
+                    <label for="daytime" class="daytime">
+                        <span>Convenient interval for communication</span>
                         <select name="daytime" id="daytime">
                             <option value="morning">morning</option>
                             <option value="afternoon">afternoon</option>
