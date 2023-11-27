@@ -69,59 +69,58 @@
     </header>
 
     <main>
-        <section class="container">
-            <form action="//httpbin.org/post" method='post' name="regisration" class="registrationForm">
-                <fieldset class="form">
+        <section class="container reg">
+            <form action="//httpbin.org/post" method='post' name="regisration">
+                <fieldset class="form-content">
                     <legend>Personal information</legend>
-                    <p class="name">
-                        <label for="name">Name</label>
+                    <label for="name" class="name">
+                        Name
                         <input type="text" name="name" id="name" placeholder="Ivan" required>
-                    </p>
+                    </label>
 
-                    <p class="sex">
-                        <Label>Sex</Label>
-                        <input type="text" name="sex" id="sex" placeholder="man">
-                    </p>
+                    <Label class="sex">
+                        Sex
+                        <div>
+                            <input type="checkbox" name="sex" id="sex" value="1" checked>Male
+                            <input type="checkbox" name="sex" id="sex" value="1">Female
+                        </div>
+                    </Label>
 
-                    <p class="birthday">
-                        <label>Birthday</label>
+                    <label class="birthday">Birthday
                         <input type="date" name="birthday" id="birthday" placeholder="01.01.2000" required>
-                    </p>
+                    </label>
 
-                    <p class="password">
-                        <lable for="password">Password</lable>
+                    <lable for="password" class="password">Password
                         <input type="password" name="password" id="password" value="password">
                         <label><input type="checkbox" class="password-checkbox"> Показать пароль</label>
-                    </p>
+                    </lable>
+
                 </fieldset>
 
-                <fieldset class="form">
+                <fieldset class="form-content">
                     <legend>Contact information</legend>
-                    <p class="email">
-                        <label>Email</label>
+
+                    <label class="email">Email
                         <input type="email" name="email" id="email" placeholder="example@gmail.com" required>
-                    </p>
+                    </label>
 
-                    <p class="tel">
-                        <label>Telephone</label>
-                        <input type="tel" name="tel" id="tel" placeholder="89999999999" required>
-                    </p>
 
-                    <p class="daytime">
-                        <label for="">Convenient interval for communication </label>
+                    <label class="tel">Telephone</label>
+                    <input type="tel" name="tel" id="tel" placeholder="89999999999" required>
+
+                    <label for="daytime" class="daytime">Convenient interval for communication
                         <select name="daytime" id="daytime">
                             <option value="morning">morning</option>
                             <option value="afternoon">afternoon</option>
                             <option value="evening">evening</option>
                             <option value="night">night</option>
                         </select>
-                    </p>
-
-                    <div class="buttons">
-                        <button type="submit" class="send">Отправить →</button>
-                        <button type="" class="reset">Сбросить</button>
-                    </div>
+                    </label>
                 </fieldset>
+                <div class="buttons">
+                    <button type="submit" class="send">Отправить →</button>
+                    <button type="reset" class="reset">Сбросить</button>
+                </div>
             </form>
         </section>
     </main>
