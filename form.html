@@ -75,27 +75,27 @@
                 <fieldset class="form-content">
                     <legend>Personal information</legend>
                     <label for="name" class="name">
-                        <label for="name">Name</label>
+                        <span>Name</span>
                         <input type="text" name="name" id="name" placeholder="Ivan" required>
                     </label>
 
-                    <Label class="gender">
-                        <span>Gender</span>
+                    <fieldset class="gender">
+                        <legend>Gender</legend>
                         <div>
                             <label class="gender__choice" for="gender">Male</label>
                             <input type="radio" name="sex" id="gender" value="Male" checked> 
                             <label class="gender__choice" for="genderf">Female</label>
                             <input type="radio" name="sex" id="genderf" value="Female">
                         </div>
-                    </Label>
+                    </fieldset>
 
                     <label class="birthday">
-                        <label for="birthday">Birthday</label>
+                        <span>Birthday</span>
                         <input type="date" name="birthday" id="birthday" placeholder="01.01.2000" required>
                     </label>
 
                     <lable for="password" class="password">
-                        <label for="password">Password</label>
+                        <span>Password</span>
                         <input type="password" name="password" id="password" placeholder="Введите пароль" required>
                         <label><input type="checkbox" class="password-checkbox">Показать пароль</label>
                     </lable>

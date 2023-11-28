@@ -63,6 +63,13 @@ body {
   align-content: center;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
 }
 
 .container {
@@ -228,7 +235,6 @@ input:focus::placeholder {
 .gender {
   display: flex;
   flex-direction: column;
-  max-width: max-content;
   margin: 0 auto;
   margin-bottom: 1rem;
   font-size: 2.5rem;
