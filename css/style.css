@@ -159,6 +159,7 @@ body {
 
 .about_company {
   justify-content: space-between;
+  gap: 2rem;
 }
 
 .about_lost {
@@ -238,6 +239,8 @@ body {
   padding: 1rem 2.4rem;
 }
 
+
+
 .under-p {
   font-family: Space-Medium, sans-serif;
   color: var(--p-color);
@@ -276,7 +279,7 @@ body {
 }
 
 .wall {
-  width: 17rem;
+  max-width: 17rem;
 }
 
 .element2 {
@@ -340,7 +343,7 @@ body {
 }
 
 .text__why .line {
-  margin-top: 3.75rem;
+  margin-top: 4.8rem;
 }
 
 .text__why .head2-white {
@@ -356,6 +359,7 @@ body {
 .descript_why .button {
   margin: 0 auto;
   margin-top: 4.8rem;
+  margin-bottom: 8rem;
 }
 
 .whitelist {
@@ -375,14 +379,17 @@ body {
 }
 
 .descript_company {
-  max-width: 45rem;
+  max-width: 59.4rem;
   margin: 0 auto;
 }
 
 .descript_company .head2 {
   margin-top: 0.75rem;
-  margin-bottom: 2rem;
   flex-direction: row;
+}
+
+.descript_company .grey {
+  margin-top: 2rem;
 }
 
 .read {
@@ -408,7 +415,8 @@ body {
 }
 
 .bigwallet2 {
-  width: 30rem;
+  width: 100%;
+  max-width: 30rem;
   height: 30.6rem;
 }
 
@@ -665,6 +673,8 @@ body {
 
 .avabruno {
   border-radius: 50%;
+  max-width: 5.4rem;
+  max-height: 5.4rem;
 }
 
 .author {
@@ -672,7 +682,7 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
+  margin-bottom: 2rem;
 }
 
 .ava p {
@@ -686,6 +696,7 @@ body {
 .iconblog {
   justify-content: center;
   max-width: 31.5rem;
+  width: 100%;
 }
 
 .blog a {
@@ -693,18 +704,10 @@ body {
   color: var(--darkblue-color);
 }
 
-.pr1 {
-  display: inline;
-  margin-bottom: 0.75rem;
-}
-
-.pr2 {
-  display: inline;
-  margin-bottom: 0.75rem;
-}
-
-.pr3 {
-  display: inline;
+.link--otz {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.2rem;
 }
 
 .line {
@@ -731,6 +734,7 @@ body {
   border-radius: 0.5rem;
   padding: 2.4rem;
   margin: 0 auto 2.4rem;
+  max-width: 70rem;
   background-color: var(--white);
 }
 
@@ -797,9 +801,13 @@ input[type='radio'] {
   padding: 1.6rem;
 }
 
-.touch {
+.touch .container  {
+  padding: 8rem;
+}
+
+.touch--container {
   background-color: var(--darkblue-color);
-  margin: 3.75rem auto + 10rem;
+  margin: 0 auto;
   border-radius: 0.5rem;
   display: flex;
   justify-content: flex-start;
@@ -809,12 +817,23 @@ input[type='radio'] {
     url("../icons/Ellipse_130_1.png");
   background-repeat: no-repeat;
   background-position: top left, bottom right;
+  width: 100%;
+  max-width: 128rem;
+  padding: 6rem;
 }
+
+
 
 .touch img {
   max-width: 11rem;
   max-height: 11rem;
   border-radius: 0.5rem;
+}
+
+.bastian {
+  max-width: 22rem;
+  max-height: 22rem;
+  border-radius: 0.8rem;
 }
 
 .touch_content {
@@ -952,6 +971,15 @@ input[type='radio'] {
   padding-bottom: 6rem;
 }
 
+.faq--head {
+  text-align: center;
+}
+
+.faq--head .line {
+  margin: 0 auto;
+  width: 4.8rem;
+}
+
 .faq .head2 {
   display: flex;
   justify-content: center;
@@ -992,14 +1020,20 @@ summary::marker {
   padding-top: 2rem;
 }
 
+.accardion .grey {
+  max-width: 73.2rem;
+}
+
 .nameofdetails {
   display: flex;
   justify-content: space-between;
   margin-top: 2rem;
+  margin-bottom: 0.8rem;
   align-items: center;
   color: var(--darkblue-color);
   font-size: 2.2rem;
   line-height: 3.2rem;
+
 }
 
 .footmenu {
@@ -1031,6 +1065,7 @@ summary::marker {
 
   .about_company {
     flex-direction: column;
+
   }
 
   .footer-content {
@@ -1042,6 +1077,7 @@ summary::marker {
   }
 
   .bigwallet {
+    width: 100%;
     max-width: 29rem;
     max-height: 33.3rem;
   }
@@ -1079,15 +1115,9 @@ summary::marker {
   .seereviews {
     margin: 0;
   }
-}
 
-@media (max-width: 1500px) {
-  .button-prev {
-    display: none;
-  }
-
-  .button-next {
-    display: none;
+  .touch--container {
+    padding: 3.2rem 2.4rem;
   }
 }
 
@@ -1168,12 +1198,12 @@ summary::marker {
   }
 
   .bigwallet2 {
-    width: 52.6rem;
-    height: 53.6rem;
+    width: 62.6rem;
+    height: 63.6rem;
   }
 
   .accardion {
-    width: 55.3rem;
+    width: 78rem;
   }
 
   .process {
@@ -1260,7 +1290,6 @@ summary::marker {
 
   .touch {
     justify-content: flex-start;
-    padding-left: 10rem;
   }
 
   .first {
@@ -1276,7 +1305,8 @@ summary::marker {
     display: flex;
     justify-content: space-between;
     gap: 10rem;
-    max-width: 100%;
+    width: 100%;
+    max-width: 144rem;
   }
 }
 
@@ -1315,6 +1345,14 @@ summary::marker {
   }
 
   .active {
+    display: none;
+  }
+
+  .button-prev {
+    display: none;
+  }
+
+  .button-next {
     display: none;
   }
 }
