@@ -184,137 +184,73 @@ main {
   line-height: 1.875rem;
 }
 
-.regisration__form {
-  display: flex;
-  max-width: 70rem;
-  flex-wrap: wrap;
+.demo {
+    flex-direction: column;
+    gap: 2rem;
 }
 
-.form-content {
-  font-size: 3rem;
-  padding: 3rem;
-  display: flex;
-  width: 100%;
-  max-width: 30rem;
-  justify-content: flex-start;
-  margin: 0 auto;
+.card {
+    position: relative;
+    width: 20rem;
+    height: 20rem;
+    margin: 0 auto;
+    transition: 1s;
+    transform-style: preserve-3d;
 }
 
-.form-content:nth-child(1) {
-  flex-direction: column;
+.town--1 {
+    position: absolute;
+    width: 20rem;
+    height: 20rem;
+    position: absolute;
+    backface-visibility:hidden;
 }
 
-.form-content:nth-child(2) {
-  flex-direction: column;
+.town--2 {
+    position: absolute;
+    width: 20rem;
+    height: 20rem;
+    position: absolute;
+    backface-visibility:hidden;
+    transform: rotateY(180deg);
 }
 
-input:focus::placeholder {
-  transform: translateY(-10px);
+.card:hover {
+    transform: rotateY(180deg);  
 }
 
-.form-content {
-  border-radius: 3rem;
-  margin-bottom: 2rem;
+marquee {
+    width: 80rem;
+    height: 10rem;
+    background-color: rgb(56, 56, 56, 0.11);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
 }
 
-.form-content legend {
-  margin-bottom: 1rem;
-  color: #667085;
-  max-width: max-content;
+marquee img {
+    display: inline-block;
+    margin-left: 3rem;
 }
 
-.name {
-  font-size: 2.5rem;
-  display: flex;
-  flex-direction: column;
-  max-width: max-content;
-  margin: 0 auto;
-  margin-bottom: 1rem;
+.square {
+    display: inline-block;
+    width: 5rem;
+    height: 5rem;
+    background-color: rgb(20, 143, 224);
+    animation: square-around 1s infinite ease-in-out;
+    margin: 0 auto;
 }
 
-.gender {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  margin-bottom: 1rem;
-  font-size: 2.5rem;
-}
+@keyframes square-around {
+    from {
+        transform: rotateZ(0);
+    }
 
-.birthday {
-  font-size: 2.5rem;
-  max-width: max-content;
-  margin: 0 auto;
-  margin-bottom: 1rem;
-}
-
-.password {
-  font-size: 2.5rem;
-  max-width: max-content;
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  gap: 1rem;
-  margin-bottom: 1rem;
-}
-
-.email {
-  font-size: 2.5rem;
-  max-width: max-content;
-  margin: 0 auto;
-  margin-bottom: 1rem;
-}
-
-.tel {
-  max-width: max-content;
-  margin: 0 auto;
-  gap: 1rem;
-  margin-bottom: 1rem;
-  font-size: 2.5rem;
-}
-label {
-  max-width: max-content;
-}
-
-.daytime {
-  margin-top: 1rem;
-  display: flex;
-  max-width: 300px;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 1 auto;
-  font-size: 2.5rem;
-  text-align: center;
-}
-
-.send,
-.reset {
-  padding: 1rem;
-  background-color: transparent;
-  border: 1px solid #1a1e42;
-  border-radius: 3rem;
-  text-align: center;
-  font-size: 1.6rem;
-}
-
-.buttons {
-  max-width: max-content;
-  margin: 0 auto;
-  margin-top: 1rem;
-  display: flex;
-  gap: 2rem;
-}
-
-.buttons button {
-  max-height: max-content;
-  cursor: pointer;
-}
-
-.send__img {
-  display: inline-block;
-  width: 2rem;
-  height: 2rem;
-  position: relative;
-  top: 0.5rem;
+    to {
+        transform: rotateZ(360deg);
+    }
 }
 
 .footer-content {
@@ -322,10 +258,14 @@ label {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 7rem;
+  margin-top: 3rem;
   margin-bottom: 1.5rem;
   gap: 2rem;
 }
+
+
+
+
 
 .first {
   display: flex;
@@ -383,8 +323,6 @@ label {
   font-size: 3rem;
   line-height: 1.875rem;
   max-width: max-content;
-  transform: rotate(-30deg) scale(150%) skewX(30deg) skewY(-30deg);
-  
 }
 
 .last {
@@ -397,12 +335,6 @@ label {
 .soc {
   display: none;
   gap: 2rem;
-}
-
-@media (max-width: 63.5rem) {
-  .regisration__form {
-    flex-direction: column;
-  }
 }
 
 @media (max-width: 814px) {
@@ -426,9 +358,6 @@ label {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-  }
-  .reg {
-    justify-content: center;
   }
 
   .wrapper {
