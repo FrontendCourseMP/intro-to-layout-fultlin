@@ -75,27 +75,27 @@
                 <fieldset class="form-content">
                     <legend>Personal information</legend>
                     <label for="name" class="name">
-                        <span>Name</span>
-                        <input type="text" name="name" id="name" placeholder="Ivan" required>
+                        <span class="required">Name</span>
+                        <input type="text" name="name" id="name" placeholder="Ivan" required class="required">
                     </label>
 
                     <fieldset class="gender">
-                        <legend>Gender</legend>
+                        <legend class="required">Gender</legend>
                         <div>
+                            <input type="radio" name="sex" id="gender" value="Male" checked>
                             <label class="gender__choice" for="gender">Male</label>
-                            <input type="radio" name="sex" id="gender" value="Male" checked> 
-                            <label class="gender__choice" for="genderf">Female</label>
                             <input type="radio" name="sex" id="genderf" value="Female">
+                            <label class="gender__choice" for="genderf">Female</label>
                         </div>
                     </fieldset>
 
                     <label class="birthday">
-                        <span>Birthday</span>
+                        <span class="required">Birthday</span>
                         <input type="date" name="birthday" id="birthday" placeholder="01.01.2000" required>
                     </label>
 
                     <lable for="password" class="password">
-                        <span>Password</span>
+                        <span class="required">Password</span>
                         <input type="password" name="password" id="password" placeholder="Введите пароль" required>
                         <label><input type="checkbox" class="password-checkbox">Показать пароль</label>
                     </lable>
@@ -105,7 +105,7 @@
                 <fieldset class="form-content">
                     <legend>Contact information</legend>
 
-                    <label class="email" for="email">
+                    <label class="email" for="email" class="required">
                         Email
                     </label>
                     <input type="email" name="email" id="email" placeholder="example@gmail.com" required>
@@ -129,6 +129,65 @@
                     <button type="submit" class="send">Отправить →</button>
                     <button type="reset" class="reset">Сбросить</button>
                 </div>
+            </form>
+
+            <form action="">
+                <dl>
+                    <dt>
+                        After
+                    </dt>
+                    <dd>Cоздаёт псевдоэлемент, который является последним потомком выбранного элемента.</dd>
+
+                    <dt>
+                        Before
+                    </dt>
+                    <dd>Является первым потомком выбранного элемента. Часто используется для добавления косметического
+                        содержимого в элемент с помощью свойства content.</dd>
+
+                    <dt>
+                        Active
+                    </dt>
+                    <dd>Псевдокласс :active соответствует элементу в момент, когда он активируется пользователем.</dd>
+
+                    <dt>
+                        Focus
+                    </dt>
+                    <dd>CSS псевдокласс :focus применяется, когда элемент (такой как input формы) получает фокус.</dd>
+
+                    <dt>
+                        Left
+                    </dt>
+                    <dd>Псевдокласс CSS :left используется с at-правилом @page, предоставляет все левые страницы
+                        печатного документа.</dd>
+                </dl>
+
+                <ul>
+
+                    <li>
+                        <input type="radio" name="active" id="active" value="active" checked>
+                        <label for="active">Active</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="focus" id="focus" value="focus" checked>
+                        <label for="focus">Focus</label>
+                    </li>
+                </ul>
+
+                <ul>
+
+                    <li>
+                        <input type="radio" name="after" id="after" value="after" checked>
+                        <label for="after">After</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="before" id="before" value="before" checked>
+                        <label for="before">Before</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="left" id="left" value="left">
+                        <label for="left">Left</label>
+                    </li>
+                </ul>
             </form>
         </section>
     </main>

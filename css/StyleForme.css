@@ -76,6 +76,8 @@ main {
   padding: 4rem 1.6rem;
   max-width: 1280px;
   margin: 0 auto;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .wrapper {
@@ -83,6 +85,7 @@ main {
   justify-content: space-between;
   max-width: 1280px;
   padding: 1.8rem 1.6rem;
+  flex-direction: row;
 }
 
 .logo {
@@ -238,6 +241,21 @@ input:focus::placeholder {
   margin: 0 auto;
   margin-bottom: 1rem;
   font-size: 2.5rem;
+  width: 20rem;
+  height: 10rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.gender div {
+  font-size: 2.5rem;
+}
+
+input[id="gender"]:checked + label {
+  color: var(--orange-color);
+}
+input[id="genderf"]:checked + label {
+  color: var(--orange-color);
 }
 
 .birthday {
@@ -315,6 +333,49 @@ label {
   height: 2rem;
   position: relative;
   top: 0.5rem;
+}
+
+
+
+input:focus + label {
+  text-decoration: dashed;
+}
+
+.required::after {
+  content: '*';
+}
+
+
+dl {
+  font-size: 3rem;
+}
+
+dt::first-letter {
+  font-size: 4rem;
+  color: red;
+}
+
+dt:nth-of-type(2n+1) {
+  font-style: italic;
+}
+
+dd::before {
+  content: '🛈';
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+li {
+  list-style: none;
+  font-size: 3rem;
+}
+
+ul li input:checked + label {
+  text-decoration: line-through;
 }
 
 .footer-content {
@@ -398,6 +459,12 @@ label {
   display: none;
   gap: 2rem;
 }
+
+
+/*  */
+
+
+
 
 @media (max-width: 63.5rem) {
   .regisration__form {

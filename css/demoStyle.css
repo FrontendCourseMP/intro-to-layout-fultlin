@@ -253,6 +253,49 @@ marquee img {
     }
 }
 
+
+.marq {
+  border: 1px solid black;
+  width: 80rem;
+  height: 10rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  overflow-x: hidden;
+  position: relative;
+  align-items: center;
+}
+
+.marq--1, .marq--2 {
+  display: flex;
+  gap: 1rem;
+  position: absolute;
+
+}
+
+.marq--1 {
+  animation: marq1 10s infinite linear;
+  left: 80rem;
+}
+.marq--2 {
+  animation: marq2 10s 5s infinite linear;
+  left: 80rem;
+}
+
+
+@keyframes marq1 {
+  to {
+    transform: translateX(-160rem);
+  }
+}
+
+@keyframes marq2 {
+  to {
+    transform: translateX(-160rem);
+  }
+}
+
+
 .footer-content {
   list-style: none;
   display: flex;
@@ -262,10 +305,6 @@ marquee img {
   margin-bottom: 1.5rem;
   gap: 2rem;
 }
-
-
-
-
 
 .first {
   display: flex;

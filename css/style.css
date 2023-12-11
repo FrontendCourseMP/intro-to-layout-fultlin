@@ -35,6 +35,10 @@
   font-weight: 600;
 }
 
+a {
+  text-decoration: none;
+}
+
 html {
   margin-left: 0;
 }
@@ -65,8 +69,11 @@ body {
   padding: 0;
 }
 
-.container {
+section {
   padding: 4rem 1.6rem;
+}
+
+.container {
   max-width: 1280px;
   margin: 0 auto;
 }
@@ -783,17 +790,37 @@ blockquote .head3 {
   margin: 4.6rem auto 1rem;
 }
 
-input[type='radio']::before {
-  content: '';
-  color: white;
-
+.point-in-steps {
+  -webkit-appearance: none;
+  appearance: none;
 }
+
+.point-in-steps::after {
+  content: url(../icons/stepper.svg);
+  display: block;
+  max-width: 2rem;
+  max-height: 2rem;
+  position: relative;
+  top: 2px;
+}
+
+.point-in-steps:checked::after {
+  content: url(../icons/stepper_point.svg);
+  display: block;
+  max-width: 2rem;
+  max-height: 2rem;
+  position: relative;
+  top: 2px;
+}
+
+
 
 .steps_chose {
   display: flex;
   align-items: center;
   margin: 0 auto;
   margin-bottom: 1.5rem;
+  position: relative;
 }
 
 .stepper {
@@ -820,6 +847,7 @@ input[type='radio']::before {
   width: 20rem;
   border-radius: 0.5rem;
   padding: 1.6rem;
+  transition: 1s;
 }
 
 .touch .container  {
@@ -1127,7 +1155,13 @@ summary::marker {
   color: var(--orange-color);
 }
 
+.chosewallet:hover {
+  transform: scale(120%);
+}
 
+a:focus {
+  color: green;
+}
 
 @media (max-width: 814px) {
   .navigation-blog {
@@ -1144,6 +1178,10 @@ summary::marker {
   }
 
   .whitelist {
+    margin: 0 auto;
+  }
+
+  .list .element {
     margin: 0 auto;
   }
 
@@ -1186,6 +1224,19 @@ summary::marker {
   .seereviews {
     margin: 0;
   }
+
+  .choseblock .chosewallet {
+    width: 100%;
+    max-width: 31rem;
+  }
+
+  .choseblock .shosewallets{
+    width: 100%;
+    margin: 4rem 0 0;
+    padding: 0 1.5rem;
+  }
+
+
 
   .touch--container {
     padding: 3.2rem 2.4rem;
