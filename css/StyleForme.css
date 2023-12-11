@@ -229,10 +229,18 @@ input:focus::placeholder {
 .name {
   font-size: 2.5rem;
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   max-width: max-content;
   margin: 0 auto;
   margin-bottom: 1rem;
+}
+
+input:focus ~ span, select:focus ~ span  {
+  color: var(--orange-color);
+}
+
+option, select {
+  font-size: 2rem;
 }
 
 .gender {
@@ -263,13 +271,15 @@ input[id="genderf"]:checked + label {
   max-width: max-content;
   margin: 0 auto;
   margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 .password {
   font-size: 2.5rem;
   max-width: max-content;
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   margin: 0 auto;
   gap: 1rem;
   margin-bottom: 1rem;
@@ -280,6 +290,8 @@ input[id="genderf"]:checked + label {
   max-width: max-content;
   margin: 0 auto;
   margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .tel {
@@ -302,6 +314,7 @@ label {
   margin: 1 auto;
   font-size: 2.5rem;
   text-align: center;
+  flex-direction: column-reverse;
 }
 
 .send,
@@ -373,6 +386,8 @@ li {
   list-style: none;
   font-size: 3rem;
 }
+
+ul {margin-bottom: 2rem;}
 
 ul li input:checked + label {
   text-decoration: line-through;

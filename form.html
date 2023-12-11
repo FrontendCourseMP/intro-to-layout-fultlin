@@ -75,8 +75,8 @@
                 <fieldset class="form-content">
                     <legend>Personal information</legend>
                     <label for="name" class="name">
-                        <span class="required">Name</span>
                         <input type="text" name="name" id="name" placeholder="Ivan" required class="required">
+                        <span class="required">Name</span>
                     </label>
 
                     <fieldset class="gender">
@@ -90,14 +90,14 @@
                     </fieldset>
 
                     <label class="birthday">
-                        <span class="required">Birthday</span>
                         <input type="date" name="birthday" id="birthday" placeholder="01.01.2000" required>
+                        <span class="required">Birthday</span>
                     </label>
 
                     <lable for="password" class="password">
-                        <span class="required">Password</span>
                         <input type="password" name="password" id="password" placeholder="Введите пароль" required>
                         <label><input type="checkbox" class="password-checkbox">Показать пароль</label>
+                        <span class="required">Password</span>
                     </lable>
 
                 </fieldset>
@@ -105,10 +105,11 @@
                 <fieldset class="form-content">
                     <legend>Contact information</legend>
 
+
                     <label class="email" for="email" class="required">
+                        <input type="email" name="email" id="email" placeholder="example@gmail.com" required>
                         Email
                     </label>
-                    <input type="email" name="email" id="email" placeholder="example@gmail.com" required>
 
 
 
@@ -116,13 +117,13 @@
                     <input type="tel" name="tel" id="tel" placeholder="89999999999" disabled>
 
                     <label for="daytime" class="daytime">
-                        <span>Convenient interval for communication</span>
                         <select name="daytime" id="daytime">
                             <option value="morning">morning</option>
                             <option value="afternoon">afternoon</option>
                             <option value="evening">evening</option>
                             <option value="night">night</option>
                         </select>
+                        <span>Convenient interval for communication</span>
                     </label>
                 </fieldset>
                 <div class="buttons">
@@ -131,7 +132,7 @@
                 </div>
             </form>
 
-            <form action="">
+            <form action="//httpbin.org/post" method='post' name="another" class="second">
                 <dl>
                     <dt>
                         After
@@ -164,11 +165,11 @@
                 <ul>
 
                     <li>
-                        <input type="radio" name="active" id="active" value="active" checked>
+                        <input type="checkbox" name="active" id="active" value="active" checked>
                         <label for="active">Active</label>
                     </li>
                     <li>
-                        <input type="radio" name="focus" id="focus" value="focus" checked>
+                        <input type="checkbox" name="focus" id="focus" value="focus" checked>
                         <label for="focus">Focus</label>
                     </li>
                 </ul>
@@ -176,18 +177,19 @@
                 <ul>
 
                     <li>
-                        <input type="radio" name="after" id="after" value="after" checked>
+                        <input type="checkbox" name="after" id="after" value="after" checked>
                         <label for="after">After</label>
                     </li>
                     <li>
-                        <input type="radio" name="before" id="before" value="before" checked>
+                        <input type="checkbox" name="before" id="before" value="before" checked>
                         <label for="before">Before</label>
                     </li>
                     <li>
-                        <input type="radio" name="left" id="left" value="left">
+                        <input type="checkbox" name="left" id="left" value="left">
                         <label for="left">Left</label>
                     </li>
                 </ul>
+                <button type="submit" class="send">Отправить →</button>
             </form>
         </section>
     </main>

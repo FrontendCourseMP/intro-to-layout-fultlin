@@ -223,7 +223,7 @@ section {
   font-style: normal;
   font-weight: 600;
   line-height: 2.8rem;
-  transition: background-color 1s, border 0.5s ease-in;
+  transition: 0.3s ease-in;
 }
 
 .reasons_for_rewallet {
@@ -662,6 +662,8 @@ section {
   margin-bottom: 1.5rem;
   position: relative;
   margin: 0 auto;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 .iconblog {
@@ -687,7 +689,7 @@ section {
   align-items: center;
   margin: 0 auto;
   padding: 1rem 2.4rem;
-  transition: 1s, border 0.5s ease-in;
+  transition: 1s;
 }
 
 .ava {
@@ -1121,18 +1123,16 @@ summary::marker {
 }
 
 .seemore:hover, .unlock:hover {
-
-  background-color: transparent;
-  border: 1px solid black;
-  color: var(--darkblue-for-text);
+  transform: translateY(-10px);
+  box-shadow: 5px 5px black;
 }
 
-.link--otz:hover {
+.blog:hover {
   scale: 110%;
 }
 
 .unlock1:hover {
-  scale: 150%;
+  scale: 110%;
 }
 
 .promiseitems:hover {
@@ -1140,7 +1140,7 @@ summary::marker {
 }
 
 .reviews:hover {
-  scale: 120%;
+  scale: 110%;
 }
 
 .whitelist:hover {
@@ -1156,11 +1156,23 @@ summary::marker {
 }
 
 .chosewallet:hover {
-  transform: scale(120%);
+  transform: scale(110%);
 }
 
 a:focus {
   color: green;
+}
+
+.navigation-blog ul a:hover {
+  border-bottom: 5px solid black;
+}
+
+summary::after {
+  content: url(../icons/checmark.svg);
+}
+
+details[open] summary::after {
+  content: url(../icons/minus.svg);
 }
 
 @media (max-width: 814px) {
