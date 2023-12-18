@@ -1208,6 +1208,10 @@ details[open] summary::after {
     margin: 0 auto;
   }
 
+  .list2 {
+    gap: 2rem;
+  }
+
   .process {
     justify-content: center;
   }
